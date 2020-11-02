@@ -2,26 +2,26 @@ const numOfTags = document.getElementsByTagName("li");
 
 const showMessageOne = () =>
 {
-  document.querySelector("firstAnswer").textContent = numOfTags;
+  document.querySelector("#firstAnswer").textContent = numOfTags.length;
   alert("There are " + numOfTags + " li tags");
 };
 const buttonOneElement = document.getElementById("buttonOne");
 buttonOneElement.addEventListener("click", showMessageOne);
 
-const numInDivOne = document.getElementsById("topThree");
+const numInDivOne = document.getElementById("topThree");
 
 const showMessageTwo = () =>{
-  document.querySelector("secondAnswer").textContent = numInDivOne;
+  document.querySelector("#secondAnswer").textContent = numInDivOne.length;
   alert("There are " + numInDivOne + " elements in the first div");
 };
 
 const buttonTwoElement = document.getElementById("buttonTwo");
 buttonTwoElement.addEventListener("click", showMessageTwo);
 
-const numInDivTwo = document.getElementsById("topTen");
+const numInDivTwo = document.getElementById("topTen");
 
 const showMessageThree = () => {
-  document.querySelector("thirdAnswer").textContent = numInDivTwo;
+  document.querySelector("#thirdAnswer").textContent = numInDivTwo.length;
   alert("There are " + numInDivTwo + " elements in the second div");
 };
 
