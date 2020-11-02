@@ -1,12 +1,12 @@
 const numOfTags = document.getElementsByTagName("li");
 
-// const showMessageOne = () =>
-// {
-//   document.querySelector("#firstAnswer").textContent = numOfTags.length;
-//   alert("There are " + numOfTags + " li tags");
-// };
-// const buttonOneElement = document.getElementById("buttonOne");
-// buttonOneElement.addEventListener("click", showMessageOne);
+const showMessageOne = () =>
+{
+  document.querySelector("#firstAnswer").textContent = numOfTags.length;
+  alert("There are " + numOfTags + " li tags");
+};
+const buttonOneElement = document.getElementsByClass("buttonOne");
+buttonOneElement.addEventListener("click", showMessageOne);
 
 const numInDivOne = document.getElementById("topThree");
 
@@ -15,7 +15,7 @@ const showMessageTwo = () =>{
   alert("There are " + numInDivOne + " elements in the first div");
 };
 
-const buttonTwoElement = document.getElementById("buttonTwo");
+const buttonTwoElement = document.getElementsByClass("buttonTwo");
 buttonTwoElement.addEventListener("click", showMessageTwo);
 
 const numInDivTwo = document.getElementById("topTen");
@@ -25,5 +25,5 @@ const showMessageThree = () => {
   alert("There are " + numInDivTwo + " elements in the second div");
 };
 
-const buttonThreeElement = document.getElementById("buttonThree");
+const buttonThreeElement = document.getElementsByClass("buttonThree");
 buttonThreeElement.addEventListener("click", showMessageThree);
